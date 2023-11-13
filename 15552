@@ -1,0 +1,7 @@
+#15552번
+import sys
+
+count = int(sys.stdin.readline().rstrip())
+for i in range(count):
+    num = list(map(int,sys.stdin.readline().rstrip().split()))
+    print(num[0]+num[1])
