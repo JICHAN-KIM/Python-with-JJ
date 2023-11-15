@@ -1,0 +1,8 @@
+#10039번
+import sys
+x = [0]*5
+for i in range(5):
+    x[i] = int(sys.stdin.readline().rstrip())
+    if x[i] < 40:
+        x[i] = 40
+print(int(sum(x)/5))
