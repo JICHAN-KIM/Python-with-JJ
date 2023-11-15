@@ -1,0 +1,15 @@
+total = int(input())
+num = int(input())
+sum = 0
+cnt = 0
+while True:
+    try:
+        A,B = map(int, input().split())
+        sum += A*B
+        cnt += 1
+    except:
+        break
+if num == cnt and total == sum:
+    print("Yes")
+else:
+    print("No")
