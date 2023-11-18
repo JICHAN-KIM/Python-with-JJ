@@ -1,0 +1,7 @@
+#2530번
+h,m,s = map(int,input().split())
+num = int(input()) + h*3600 + m*60 + s
+s1 = num%60
+m1 = int((num-s1)%3600/60)
+h1 = int((num-m1-s1)/3600)%24
+print(h1,m1,s1)
