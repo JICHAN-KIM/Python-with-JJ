@@ -1,0 +1,13 @@
+#문제: https://youtu.be/2zjoKjt97vQ?list=PLRx0vPvlEmdAghTr5mXQxGpHjWqSz0dgC&t=1144
+
+x = input()
+data = []
+result = 0
+for i in range(len(x)):
+   data.append(int(x[i]))
+for i in range(len(x)):
+   if result + data[i] > result*data[i]:
+       result+=data[i]
+   else:
+       result*=data[i]
+print(result)
